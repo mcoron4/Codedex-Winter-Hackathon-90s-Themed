@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Uber Cabbie</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Uber Cabbie</div>
+    <ul class="menu">
+      <li><a href="#">Ride</a></li>
+      <li><a href="#">Drive</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Uber Eats</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <ul class="auth">
+      <li><a href="#">EN</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Log in</a></li>
+      <li><a href="#">Sign up</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h1>Go anywhere with Uber Cabbie</h1>
+    <div class="toggle-options">
+      <div class="toggle-option">
+        <input type="radio" id="ride" name="service-type" value="ride" checked>
+        <label for="ride">Ride</label>
+      </div>
+      <div class="toggle-option">
+        <input type="radio" id="rent" name="service-type" value="rent">
+        <label for="rent">Rent</label>
+      </div>
+    </div>
+
+    <div class="form-map-container">
+      <div class="form-section">
+        <form class="ride-form" id="rideForm">
+          <div class="location-inputs">
+            <input type="text" id="pickup" name="pickup" placeholder="Pickup location">
+            <input type="text" id="dropoff" name="dropoff" placeholder="Dropoff location">
+          </div>
+          <div class="time-select">
+            <select id="time" name="time">
+              <option value="40">Pickup in 45min</option>
+              <option value="60">Pickup in 60min</option>
+              <option value="90">Pickup in 90min</option>
+              <option value="120">Pickup in 120min</option>
+            </select>
+          </div>
+          <button type="submit" class="price-button" id="priceButton">See prices</button>
+        </form>
+        <div class="taxi-image">
+          <img 
+            src="https://static.vecteezy.com/system/resources/thumbnails/047/601/844/small/yellow-taxi-cab-cut-out-stock-png.png" alt="90s style taxi" 
+            class="taxi-icon"
+          >
+        </div>
+      </div>
+
+      <div class="map-container">
+        <img src="map.png" alt="90s style map" class="retro-map">
+        <div class="map-controls">
+          <button class="map-button">+</button>
+          <button class="map-button">-</button>
+          <button class="map-button">↑</button>
+          <button class="map-button">↓</button>
+          <button class="map-button">←</button>
+          <button class="map-button">→</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="suggestions">
+      <h2>Suggestions</h2>
+      <div class="suggestion-cards">
+        <div class="card">
+          <h3>Ride</h3>
+          <p>Go anywhere with Uber Cabbie. Request a ride, wait, and go.</p>
+          <a href="#" class="details-link">Details</a>
+        </div>
+        <div class="card">
+          <h3>Reserve</h3>
+          <p>Reserve your ride in advance so you can relax on the day of your trip.</p>
+          <a href="#" class="details-link">Details</a>
+        </div>
+        <div class="card">
+          <h3>Rental Cars</h3>
+          <p>Your perfect rental car is a few clicks away. Learn more about Uber Rent.</p>
+          <a href="#" class="details-link">Details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
